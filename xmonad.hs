@@ -94,9 +94,6 @@ main = do
        ("M-e", spawn "emacsclient -c")
      , ("M-r M-r", spawn "sh ~/emacs/emacsdistro.sh spacemacs")
      , ("M-r M-e", spawn "sh ~/emacs/emacsdistro.sh master")
-      -- ,("M-o", spawn "rofi")
-     -- ,("M-w", runOrRaiseAndDo "conkeror" (className =? "conkeror"))
-     -- , ("M-w", raiseNextMaybe spawn ("conkeror") (className =? "conkeror))
      , ("M-f", sendMessage ToggleStruts)
 
      --volume
