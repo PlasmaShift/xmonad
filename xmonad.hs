@@ -43,30 +43,6 @@ myAutoSP = mySP { autoComplete       = Just 1000 }
 myWaitSP = mySP { autoComplete       = Just 1000000 }
 
 
--- myTheme :: Theme
--- myTheme = defaultTheme
---           {
---             -- fontName = "xft:DejaVu Sans YuanTi:pixelsize=14"
---            decoHeight = 22
---           , decoWidth = 400
---           , activeColor = "grey75"
---           , inactiveColor = "grey30"
---           , urgentColor = "grey30"
---           , activeBorderColor = "#61ce3c"
---           , inactiveBorderColor = "grey40"
---           , urgentBorderColor = "red"
---           , activeTextColor = "black"
---           , inactiveTextColor = "grey80"
---           , urgentTextColor = "grey80"
---           }
-
--- myLayoutPrompt = inputPromptWithCompl myAutoSP "Layout"
---                  (mkComplFunFromList' ["1.Tall", "2.Wide", "3.2Col", "4.2Row", "5.Tab"]) ?+ \l ->
---                      sendMessage $ JumpToLayout $ drop 2 l
-
--- unused char
--- x, c, y, ', \, d
-
 main = do
   xmproc <- spawnPipe "compton"
   xmproc <- spawnPipe "feh --bg-fill ~/Downloads/fleet.jpg"
